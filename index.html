@@ -1,0 +1,846 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Info</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link
+        href="images/logoo.png"
+        rel="icon">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i?Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+    <link
+        href="https://res.cloudinary.com/keepfluent/raw/upload/v1628669213/LandingPages/Assest/assets/vendor/bootstrap/css/bootstrap.min_o4hlha.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
+    <link
+        href="https://res.cloudinary.com/keepfluent/raw/upload/v1628669224/LandingPages/Assest/assets/vendor/glightbox/css/glightbox.min_vz938t.css"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style_m2y7h5.css">
+    <link rel="stylesheet"
+        href="https://res.cloudinary.com/keepfluent/raw/upload/v1630674694/LandingPages/Assest/assets/css/Gallery_zsblmz.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <!-- footer section  -->
+    
+
+    <!-- footer section ended -->
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+            color: #444444;
+        }
+
+        a {
+            color: #1b5f95;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #1b5f95;
+            text-decoration: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        .RequestCommBg {
+            width: 100%;
+            margin: 20px 0px 30px 0px;
+            padding: 15px 15px 15px 0px;
+        }
+
+        .RequestCommBtn {
+            font-size: 16px;
+            width: 175px;
+            background-color: #1b5f95;
+            border-color: #1b5f95;
+        }
+
+        .scrolled-offset {
+            margin-top: 65px;
+        }
+
+        #header.fixed-top {
+            height: 120px;
+        }
+        @media (max-height: 900px) {
+            #header.fixed-top {
+                height: 90px;
+            }
+        }
+
+        @media (max-height: 500px) {
+            #home {
+                height: 150vh;
+            }
+        }
+        
+        
+        #header {
+            background: #fff;
+            transition: all 0.5s;
+            z-index: 997;
+            height: 86px;
+            -webkit-border-radius: 0px 0px 70px 0px;
+            border-radius: 0px 0px 70px 0px;
+            -moz-border-radius: 0px 0px 70px 0px;
+            -khtml-border-radius: 0px 0px 70px 0px;
+            box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+        }
+
+
+       
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html"><img
+                    src="images/logoo.jpg"
+                    alt="logo"></a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="dropdown "><a class="nav-link" href="">
+                            <i class="bx bx-home headerIcons headerIcons">
+                            </i>
+                            HOME
+                        </a>
+                    </li>
+                    <li class="dropdown "><a class="nav-link" href="#">ABOUT<i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#our-services">PURPOSE</a></li>
+                            <li><a href="#teamo">OUR TEAM</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown "><a class="nav-link" href="Locations/albany.html">LOCATION <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="Locations/albany.html">ALBANY</a></li>
+                            <li><a href="Locations/Buffalo.html">BUFFALO</a></li>
+                            <li><a href="Locations/Rochester.html">ROCHESTER</a></li>
+                            <li><a href="Locations/Syracuse.html">SYRACUSE</a></li>
+                            <li><a href="Locations/Yonkers.html">YONKERS</a></li>
+                            <li><a href="Locations/Utica.html">UTICA</a></li>
+                            <li><a href="Locations/Binghamton.html">BINGHAMTON</a></li>
+                            <li><a href="Locations/Ithaca.html">ITHACA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sitemap/sitemap.html"><span>SITE MAP</span> </a>
+                    <li><a href="Find School/findschool.html"><span>FIND SCHOOL</span> </a>
+                    <li><a href="#contacto"><span>CONTACT</span> </a>
+                       
+                    </li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header>
+    <!-- scroll here  -->
+    <div class="scrollTop" onclick="scrollToTop()"></div>
+    <!-- scroll ended here  -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- slider here  -->
+<div class="slido">
+    <div class="conteneur">
+        <div id="sliderAccueil">
+                <div id="slideshow-wrap">
+                    <input type="radio" id="button-1" name="controls" checked="checked"/>
+                    <label for="button-1"></label>
+                    <input type="radio" id="button-2" name="controls"/>
+                    <label for="button-2"></label>
+                    <input type="radio" id="button-3" name="controls"/>
+                    <label for="button-3"></label>
+                  <input type="radio" id="button-4" name="controls"/>
+                  <label for="button-4"></label>
+                    
+                    <label for="button-1" class="arrows" id="arrow-1">></label>
+                    <label for="button-2" class="arrows" id="arrow-2">></label>
+                    <label for="button-3" class="arrows" id="arrow-3">></label>
+                   <label for="button-4" class="arrows" id="arrow-4">></label>
+                    
+                    <div id="slideshow-inner">
+                        <ul>
+                            <li >
+                                <div id="slide1" class="slides"> 
+                                </div>
+                                <div class="description">
+                                    <div class="description-text">
+                                        <p><span></span>le 12-12-17</p>
+                                        <h2>The Marymount School</h2>
+                                        <p>Marymount is a college preparatory school for girls, committed to the development of the lifelong skills of critical thinking and problem solving. A wide range of extracurricular activities complements the academic program and provides opportunities for creativity, self-expression, leadership, and collaboration.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="slide2" class="slides"> 
+                                </div>
+                                <div class="description">
+                                    <div class="description-text">
+                                        <p><span></span>le 12-12-17</p>
+                                        <h2>Brearley School</h2>
+                                        <p>The Brearley School challenges girls of adventurous intellect and diverse backgrounds to think critically and creatively and prepares them for principled engagement in the world.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="slide3" class="slides">
+                                  
+                                </div>
+                                <div class="description">
+                                    <div class="description-text">
+                                        <p><span></span>le 12-12-17</p>
+                                        <h2>Dwight School</h2>
+                                        <p>One of New York City’s oldest independent schools ― our history dates back to 1872 ― Dwight is proud of its rich traditions, illustrious alumni, and numerous advances in education. Yet it is our present and future that I am most excited by because innovation is part of our DNA. </p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div id="slide4" class="slides"> 
+                                </div>
+                                <div class="description">
+                                    <div class="description-text">
+                                        <p><span></span>le 12-12-17</p>
+                                        <h2>Collegiate School</h2>
+                                        <p>Collegiate is a founding member of Interschool, a consortium of eight independent schools working cooperatively to develop programs and activities involving students and teachers from the participating schools.</p>
+                                    </div>
+                                </div>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+       </div>
+    </div>
+    
+</div>
+    <!-- slider here ended -->
+    <br>
+    <br>
+    
+    <!-- best schools in New York -->
+<div class="newyorko">
+    <div class="container">
+
+        <h1 id="hela">
+            Best Schools in New York.
+            <small>Check Details on  <a href="Locations/albany.html" target="_blank">Location</a></small>
+        </h1>
+
+        <div class="grid">
+
+            <div class="card">
+                <input id="card1" type="checkbox">
+                <label class="tgl-btn" for="card1"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/brearley-school.jpg" alt="murray">
+                    </div>
+                    <h2 class="card-title">Bearley School</h2>
+                    <p class="card-detail">The Brearley School challenges girls of adventurous intellect and diverse backgrounds to think critically and creatively and prepares them for principled engagement in the world.
+
+                      <br><br>
+
+                      Guided by a dedicated community of adults, students develop a command of many disciplines, a love of learning and a resilient and generous spirit <br></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card2" type="checkbox">
+                <label class="tgl-btn" for="card2"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/Marymount+School_Photo_5th+Ave (1).jpg" alt="cage">
+                    </div>
+                    <h2 class="card-title">Marymount School</h2>
+                    <p class="card-detail">Marymount is a college preparatory school for girls, committed to the development of the lifelong skills of critical thinking and problem solving. A wide range of extracurricular activities complements the academic program and provides opportunities for creativity, self-expression, leadership, and collaboration. These experiences foster social skills, sportsmanship, a sense of responsibility, independence, and self-confidence. <br><br>The School promotes in each student a respect for her own unique abilities and a commitment to responsible living in a changing world. Marymount welcomes diversity and draws upon it to foster cultural sensitivity, religious understanding, and a global perspective.<br></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card3" type="checkbox">
+                <label class="tgl-btn" for="card3"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/collegiateny.jpg" alt="seagal">
+                    </div>
+                    <h2 class="card-title">Collegiate School</h2>
+                    <p class="card-detail">Collegiate is divided into Lower School (Kindergarten-Grade 4), Middle School (Grades 5-8), and Upper School (Grades 9-12). Each division has its own administrative head and core faculty. Many faculty members teach in more than one division of the school. The students and faculty enjoy the advantages of a small-school environment while benefiting from the stimulation a college preparatory school can provide. <br><br>The atmosphere at Collegiate is shaped by the close interaction of the student body and a sense of community within the school.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid">
+
+            <div class="card">
+                <input id="card4" type="checkbox">
+                <label class="tgl-btn" for="card4"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/nord-angelia.jpg" alt="murray">
+                    </div>
+                    <h2 class="card-title">Nord Anglia School</h2>
+                    <p class="card-detail">Our international boarding schools offer your child an unforgettable educational experience.
+                     <br>
+                      Offering the best in international and bilingual education in breathtaking scenery, your child’s boarding school experience starts their journey to becoming a confident and resilient global citizen ready to make their mark on the world.
+                      
+                     </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card5" type="checkbox">
+                <label class="tgl-btn" for="card5"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/thechaplinschool.jpg" alt="cage">
+                    </div>
+                    <h2 class="card-title">The Chapin School</h2>
+                    <p class="card-detail">Ever since Maria Bowen Chapin founded The Chapin School in 1901, her commitment to academic excellence and high moral values have been the cornerstones of the School's philosophy. Miss Chapin cited the following characteristics as a standard of excellence for a school: "Profound recognition of the dignity of sound scholarship, <br>
+                      and courage to attempt the untrodden ways of any height which may give a wider vision of the future-to-be-desired." Her vision for the education of young women has remained our guide as our curriculum and traditions have evolved.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card6" type="checkbox">
+                <label class="tgl-btn" for="card6"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/trinity school.JPG" alt="seagal">
+                    </div>
+                    <h2 class="card-title">Trinity SchooI</h2>
+                    <p class="card-detail">The conversation between student and teacher is the heart of our school; all that we do must be born of and nourish that relationship. We are called to challenge the minds, fire the imaginations, and train the bodies of the young people who have been entrusted to us; to enlarge their spiritual lives; and to increase their capacity for mutual and self-respect. <br>
+                      We intend to prepare them to learn confidently for the rest of their lives and to give generously and joyfully to others. We can accomplish these things only if we keep our students safe and well while they are in our charge.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="grid">
+
+            <div class="card">
+                <input id="card7" type="checkbox">
+                <label class="tgl-btn" for="card7"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/Spence+School_Photo_Rear+Yard.jpg" alt="murray">
+                    </div>
+                    <h2 class="card-title">Spence School</h2>
+                    <p class="card-detail">I welcome you to our school with an invitation to explore the many stories throughout the site that highlight the vibrancy of the Spence community.
+
+                      <br>
+                      Every space and every aspect of our program is focused on teaching and learning, on building close connections with a gifted faculty, and on creating age-appropriate distinction for our Lower, Middle and Upper Schools. This is what shapes our community.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card8" type="checkbox">
+                <label class="tgl-btn" for="card8"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/pelz+2019_Browning_Julie_Goldstone_1202.jpg" alt="cage">
+                    </div>
+                    <h2 class="card-title">The Browning School</h2>
+                    <p class="card-detail">Great boys’ schools give the distinctive joys, concerns, and complexities of boyhood the attention and respect they deserve. At Browning, we intentionally cultivate deep relationships that take boys’ intellectual and emotional experiences seriously. <br> I invite you to explore the ways in which our school knows, loves and challenges our boys so that they may grow into the excellent students, dedicated friends, and decent men whose lives will influence others for the better.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <input id="card9" type="checkbox">
+                <label class="tgl-btn" for="card9"><span></span></label>
+                <div class="tgl-view">
+                    <div class="card-image">
+                        <img src="images/dwight-school-new-york-12.jpg" alt="seagal">
+                    </div>
+                    <h2 class="card-title">Dwight School</h2>
+                    <p class="card-detail">Welcome to Dwight School, where we are dedicated to crafting a personalized journey for every student based on individual interests, talents, and passions. We call this “igniting the spark of genius in every child.”
+                      <br>
+
+                      This unique educational philosophy has distinguished Dwight as an internationally renowned educator of the next generation of global leaders ― one student at a time.
+                      
+                      </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- best schools in New York ended -->
+
+
+   <!-- our purpose started from here   -->
+   <section id="our-services">
+    <div class="containertt">
+      <div class="desc">
+        <div class="headingtt">
+          <h1>Our Purpose</h1>
+        </div>
+        <div class="text">
+          <p>We know that to find best school for your kids is way too hard without any informations. so we are here for you providing acurate information about various schools in new york in a simple way and for that we providing services which are :- </p>
+        </div>
+      </div>
+      <div class="services">
+  
+        <div class="column" id="column-1">
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-flask" aria-hidden="true"></i>
+              <p class="service-txt">
+                ACCURATE INFORMATION  
+              </p>                       
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-flag" aria-hidden="true"></i>
+              <p class="service-txt">
+                VISION AND VALUES
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              <p class="service-txt">
+                CAREERS
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column" id="column-2">
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+              <p class="service-txt">
+                EASILY FIND
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+              <p class="service-txt">
+                NEAR YOU
+              </p>
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-database" aria-hidden="true"></i>
+              <p class="service-txt">
+                SCHOOLS DATA
+              </p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="column" id="column-2">
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-search" aria-hidden="true"></i>
+  
+              
+              <p class="service-txt">
+                SEARCHING
+              </p>                            
+            </div>
+          </div>
+          <div class="service">
+            <div class="service-desc">
+              <i class="fa fa-file-word-o" aria-hidden="true"></i>
+              <p class="service-txt">
+                WORDFILE AVAILABLE
+              </p>
+            </div>
+          </div>
+          <div class="service hidden">
+            <div class="service-desc">
+              <i class="service-icon">
+  
+              </i>
+              <p class="service-txt">
+                 USER 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="clear-fix"></div>
+    </div>
+  </section>
+   <!-- our purpose ended  here   -->
+    
+    
+    
+  
+    <!-- our team startd here -->
+<section id="teamo">
+  <h1 class="helan">
+        Our Team.
+        <small>Alone we can do so little; together we can do so much.</small>
+    </h1>
+    <section class="mateam">
+    <div class="containerxx">
+      <div class="cardxx">
+        <div class="imgBxx">
+          <img src="images/abdulx.jpg" alt="">
+        </div>
+        <div class="contentxx">
+          <div class="detailxx">
+            <h2>Abdul Rehman <br><span>Frontend Developer</span></h2>
+            <ul class="social-icons">
+            
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        
+  
+  
+      </div>
+      <div class="cardxx">
+        <div class="imgBxx">
+          <img src="images/saadx.jpg" alt="">
+        </div>
+        <div class="contentxx">
+          <div class="detailxx">
+            <h2>Saad <br><span>Frontend Developer</span></h2>
+            <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            
+            </ul>
+          </div>
+        </div>
+        
+  
+  
+      </div>
+      
+    </div>
+  </section>
+</section>
+  <!-- contact us text  -->
+  <h1 id="hela" class="helan2">
+    Contact Us
+    <small>For all inquiries, Please email us using the form below.</small>
+</h1>
+  <!-- contact us text end -->
+    <!-- contact us section started from here -->
+
+    <div class="concave" id="contacto">
+        <section class="contact_wrapper">
+            <div class="contact_info">
+              <h3 class="title">
+                Contact Info
+              </h3>
+          
+              <ul class="icons_wrapp">
+                <li>
+                  <div class="icon">
+                    <span class="material-icons-outlined"> place </span>
+                  </div>
+                  <div class="text">
+                    Metro Star Gate ( Aptech ) Karachi , Pakistan. 
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="material-icons-outlined"> mail_outline </span>
+                  </div>
+                  <div class="text">
+                    huaweiuser2468900 <br> @gmail.com
+                  </div>
+                </li>
+                <li>
+                  <div class="icon">
+                    <span class="material-icons-outlined"> phone_in_talk </span>
+                  </div>
+                  <div class="text">
+                    +92-347-3589934
+                  </div>
+                </li>
+              </ul>
+          
+              <ul class="soci_wrap">
+                <li>
+                  <a href="#" class="material-icons-outlined00">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="material-icons-outlined00">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  </a>
+                </li>
+                
+                <li>
+                  <a href="#" class="material-icons-outlined00">
+                    <i class="fa fa-reddit-alien" aria-hidden="true"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+            <div class="contact_msg">
+              <h3 class="title">
+                Send a Message
+              </h3>
+          
+              <div class="form_fild" id="form">
+                <div class="input_group w_50">
+                  <input type="text" class="input" required />
+                  <label class="placeholder">First Name</label>
+                </div>
+          
+                <div class="input_group w_50">
+                  <input type="text" class="input" required />
+                  <label class="placeholder">Last Name</label>
+                </div>
+          
+                <div class="input_group w_50">
+                  <input type="text" class="input" required />
+                  <label class="placeholder">Emal Address</label>
+                </div>
+          
+                <div class="input_group w_50">
+                  <input type="tel" class="input" required />
+                  <label class="placeholder">Mobile Number</label>
+                </div>
+          
+                <div class="input_group w_100">
+                  <textarea class="input input_textarea " rows="6" required></textarea>
+                  <label class="placeholder textarea">Write your message here...</label>
+                </div>
+          
+                <div class="input_group">
+                  <input type="submit" class="btn" value="Send" />
+                </div>
+                
+          
+              </div>
+          
+            </div>
+            <div class="popup">
+              <h2>Thanks for Submitting the form.</h2>
+              <b class="close">X</b>
+            </div>
+          
+          </section>
+          </div>
+          <canvas id="my-canvas"></canvas>
+    <!-- contact us section ended -->
+
+
+     
+    <!-- footer section started here  -->
+
+    <footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>School<span>&nbsp;Info.</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="index.html#our-purpose">About</a>
+				
+					<a href="Locations/albany.html">Location</a>
+				
+					<a href="sitemap/sitemap.html">Site Map</a>
+					
+					<a href="Find School/findschool.html">Find School</a>
+					
+					<a href="index.html#contacto">Contact</a>
+				</p>
+
+				<p class="footer-company-name">School Info © 2022</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Shahr-e-Faisal</span> Aptech Metro Star Gate</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+92 3473589934</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:huaweiuser2468900@gmail.com">huaweiuser2468900@gmail.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the Website</span>
+					We are providing best schools info in all over New York City. Our website based on Simple & Easy to use.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+    
+    <!-- footer section ended here  -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src=""></script>
+
+    <script
+        src="https://res.cloudinary.com/keepfluent/raw/upload/v1628669215/LandingPages/Assest/assets/vendor/bootstrap/js/bootstrap.bundle.min_zuzo35.js"></script>
+    <script
+        src="https://res.cloudinary.com/keepfluent/raw/upload/v1628669224/LandingPages/Assest/assets/vendor/glightbox/js/glightbox.min_giiyqc.js"></script>
+
+    <script
+        src="https://res.cloudinary.com/keepfluent/raw/upload/v1633962513/LandingPages/ABHN/assets/js/main_bjvnrr.js"></script>
+    <!-- footer section script  -->
+    
+    <!-- footer section script ended -->
+
+
+
+
+
+
+
+
+    <!-- our purpose section scripted here  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <!-- our purpose section scripted ended here  -->
+
+
+
+
+ <!-- scroll here  -->
+ <script src="index.min.js"></script>
+<script type="text/javascript">
+  window.addEventListener('scroll', function(){
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active" , window.scrollY > 500)
+  })
+  function scrollToTop(){
+    window.scrollTo({
+      top:0,
+      behavior: 'smooth'
+    })
+  }
+</script>
+ <!-- scroll ended here  -->
+
+
+
+
+<!-- slider here -->
+<script>
+    // /!\ Optional JS for Autoplay /!\
+
+// AUTOPLAY SLIDER CSS
+  var nbSlide = $(".slides").length;
+  var i = 1;
+  function sliderAutoplay(){
+    if(i == nbSlide+1) {
+      i = 1;
+      $("#button-"+i).prop("checked", true).trigger("click");
+    } else {
+      $("#button-"+i).prop("checked", true).trigger("click");
+    }
+    i++;
+    //  slide
+    timeout = setTimeout(sliderAutoplay,8000); 
+  }
+  sliderAutoplay();
+
+// AUTOPLAY STOP 
+  $('#slideshow-wrap input').click(function(){
+    var id = $(this).attr("id");
+    clearTimeout(timeout);
+    //console.log(id.substr(-1));
+  });
+</script>
+<!-- slider here ended -->
+
+
+
+    
+
+
+
+<!-- thanks for Submitting form here    -->
+
+<script>
+  let btn = document.querySelector('.btn');
+  let popup = document.querySelector('.popup');
+  let close = document.querySelector('.close');
+  let confe = document.querySelector('#my-canvas');
+  btn.onclick = function(){
+      popup.classList.add('active');
+      confe.classList.add('active');
+  }
+  close.onclick = function(){
+      popup.classList.remove('active');
+      confe.classList.remove('active');
+  }
+  
+  
+  var confettiSettings = { target: 'my-canvas' };
+  var confetti = new ConfettiGenerator(confettiSettings);
+  confetti.render();
+  </script>
+<!-- thanks for Submitting ended here    -->
+
+
+</body>
+
+</html>

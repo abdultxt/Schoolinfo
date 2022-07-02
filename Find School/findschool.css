@@ -1,0 +1,391 @@
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #map {
+    height: 80%;
+    width: 80%;
+    margin-left: 150px;
+    
+  }
+  @media (max-width: 958px) {
+   
+    #map{
+      margin-left: 90px;
+    }
+  }
+  @media (max-width: 651px) {
+   
+    #map{
+      margin-left: 40px;
+    }
+  }
+#pac-input {
+  margin-left: 20px !important;
+  margin-top: 20px;
+}
+  @media (max-width: 697px) {
+   
+    #pac-input{
+      margin-left: -90px !important;
+      margin-top: 53px !important;
+    }
+  } 
+  @media (max-width: 641px) {
+   
+    #pac-input{
+      margin-left: -120px !important;
+    }
+  } 
+  @media (max-width: 605px) {
+   
+    #pac-input{
+      margin-left: -170px !important;
+    }
+  } 
+  @media (max-width: 541px) {
+   
+    #pac-input{
+      margin-left: -184px !important;
+    }
+  } 
+
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  
+  #infowindow-content .title {
+    font-weight: bold;
+  }
+  
+  #infowindow-content {
+    display: none;
+  }
+  
+  #map #infowindow-content {
+    display: inline;
+  }
+  
+  .pac-card {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    font-family: Roboto;
+    padding: 0;
+  }
+  
+  #pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+  }
+  
+  .pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+  }
+  
+  .pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  
+  #pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+  }
+  
+  #pac-input:focus {
+    border-color: #4d90fe;
+  }
+  
+  #title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+  }
+  
+  #target {
+    width: 345px;
+  }
+  
+  
+
+
+ /* scroll top */
+ .scrollTop
+ {
+   position: fixed;
+   bottom: 800px;
+   right: 40px;
+   width: 60px;
+   height: 60px;
+   background: #305c7e url(../images/scrolltop.png);
+   border-radius: 50%;
+   background-size: 40px;
+   background-position: center;
+   z-index: 100000;
+   
+   cursor: pointer;
+   background-repeat: no-repeat;
+   visibility: hidden;
+   opacity: 0;
+   transition: 0.5s;
+ 
+ 
+ 
+ }
+ .scrollTop.active {
+   bottom: 40px;
+   visibility: visible;
+   opacity: 1;
+ }
+ /* scroll top ended */
+ 
+ 
+ 
+   
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* footer section started  */
+   .footer-distributed{
+     background: #183e5c;
+     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+     box-sizing: border-box;
+     width: 100%;
+     text-align: left;
+     font: bold 16px sans-serif;
+     padding: 55px 50px;
+     
+   }
+   
+   .footer-distributed .footer-left,
+   .footer-distributed .footer-center,
+   .footer-distributed .footer-right{
+     display: inline-block;
+     vertical-align: top;
+   }
+   
+   /* Footer left */
+   
+   .footer-distributed .footer-left{
+     width: 40%;
+   }
+   
+   /* The company logo */
+   
+   .footer-distributed h3{
+     color:  #ffffff;
+     font: normal 36px 'Open Sans', cursive;
+     margin: 0;
+   }
+   
+   .footer-distributed h3 span{
+     color:  lightseagreen;
+   }
+   
+   /* Footer links */
+   
+   .footer-distributed .footer-links{
+     color:  #ffffff;
+     margin: 20px 0 12px;
+     padding: 0;
+   }
+   
+   .footer-distributed .footer-links a{
+     display:inline-block;
+     line-height: 1.8;
+     font-weight:400;
+     text-decoration: none;
+     color:  inherit;
+   }
+   
+   .footer-distributed .footer-company-name{
+     color:  wheat;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+   }
+   
+   /* Footer Center */
+   
+   .footer-distributed .footer-center{
+     width: 35%;
+   }
+   
+   .footer-distributed .footer-center i{
+     background-color:  #305c7e;
+     color: #ffffff;
+     font-size: 25px;
+     width: 38px;
+     height: 38px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 42px;
+     margin: 10px 15px;
+     vertical-align: middle;
+   }
+   
+   .footer-distributed .footer-center i.fa-envelope{
+     font-size: 17px;
+     line-height: 38px;
+   }
+   
+   .footer-distributed .footer-center p{
+     display: inline-block;
+     color: #ffffff;
+     font-weight:400;
+     vertical-align: middle;
+     margin:0;
+   }
+   
+   .footer-distributed .footer-center p span{
+     display:block;
+     font-weight: normal;
+     font-size:14px;
+     line-height:2;
+   }
+   
+   .footer-distributed .footer-center p a{
+     color:  wheat;
+     text-decoration: none;;
+   }
+   
+   .footer-distributed .footer-links a:before {
+     content: "|";
+     font-weight:300;
+     font-size: 20px;
+     left: 0;
+     color: #fff;
+     display: inline-block;
+     padding-right: 5px;
+   }
+   
+   .footer-distributed .footer-links .link-1:before {
+     content: none;
+   }
+   
+   /* Footer Right */
+   
+   .footer-distributed .footer-right{
+     width: 20%;
+   }
+   
+   .footer-distributed .footer-company-about{
+     line-height: 20px;
+     color:  #92999f;
+     font-size: 13px;
+     font-weight: normal;
+     margin: 0;
+   }
+   
+   .footer-distributed .footer-company-about span{
+     display: block;
+     color:  #ffffff;
+     font-size: 14px;
+     font-weight: bold;
+     margin-bottom: 20px;
+   }
+   
+   .footer-distributed .footer-icons{
+     margin-top: 25px;
+   }
+   
+   .footer-distributed .footer-icons a{
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     
+     border-radius: 2px;
+   
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+   
+     margin-right: 3px;
+     margin-bottom: 5px;
+   }
+   
+   /* If you don't want the footer to be responsive, remove these media queries */
+   
+   @media (max-width: 880px) {
+   
+     .footer-distributed{
+       font: bold 14px sans-serif;
+     }
+   
+     .footer-distributed .footer-left,
+     .footer-distributed .footer-center,
+     .footer-distributed .footer-right{
+       display: block;
+       width: 100%;
+       margin-bottom: 40px;
+       text-align: center;
+     }
+   
+     .footer-distributed .footer-center i{
+       margin-left: 0;
+     }
+   
+   }
+   
+   /* footer section ended  */
